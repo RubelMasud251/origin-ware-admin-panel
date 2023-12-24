@@ -1,0 +1,44 @@
+import { FaBars } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { IoIosNotificationsOutline } from "react-icons/io";
+
+function Header({ toggleMenu }) {
+  return (
+    <div className="w-full bg-black p-4 text-white sticky top-0">
+      <div className="flex  justify-between items-center">
+        <div className="lg:hidden block">
+          <FaBars onClick={toggleMenu} size={24} />
+        </div>
+        <div className="">
+          <Link to="/">
+            <h1 className="hidden lg:block text-2xl font-semibold  ">
+              Origin Ware
+            </h1>
+          </Link>
+        </div>
+        <div className="w-auto">
+          <input
+            type="search"
+            name=""
+            id=""
+            placeholder="Search"
+            className="bg-[#262626] px-4 py-[3px] outline-none border border-gray-500 rounded-md hover:border-gray-100  w-full"
+          />
+        </div>
+        <div className="flex items-center gap-2 ">
+          <button className="bg-[#262626] hover:bg-[#44403c] rounded-md p-2">
+            <IoIosNotificationsOutline size={20} />
+          </button>
+          <button className="bg-[#44403c] text-xs px-0 rounded-md p-2">
+            <span className="font-semibold px-2 rounded-md  hidden">
+              My Store
+            </span>
+            <span className="bg-[#25e82b] rounded-md  p-2">MS</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Header;

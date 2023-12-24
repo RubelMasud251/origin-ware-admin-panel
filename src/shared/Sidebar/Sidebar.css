@@ -1,0 +1,18 @@
+/* Sidebar.css */
+
+/* Add a class for the sub-menu container */
+.subMenuContainer {
+  opacity: 0; /* Initial opacity */
+  max-height: 0; /* Initial height */
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease; /* Add transitions */
+}
+
+/* Show the sub-menu when the container has the "open" class */
+.subMenuContainer.open {
+  opacity: 1;
+  max-height: 100vh; /* Use a suitable max height */
+}
+.active {
+  background-color: rgba(255, 255, 255, 0.838) !important;
+}
