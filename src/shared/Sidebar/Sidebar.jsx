@@ -175,7 +175,7 @@ const Sidebar = ({ children }) => {
           {menuItems.map((item, index) => renderMenuItem(item, index))}
         </div>
         <main
-          className={`lg:w-[80%]  min-h-screen ml-auto w-full  ${
+          className={`lg:w-[80%] md:p-8 m-0 p-0 pt-6 min-h-screen ml-auto w-full  ${
             isMenuVisible ? "bg-black/50 lg:bg-zinc-50" : ""
           }`}
           onClick={handleNavLinkClick}
