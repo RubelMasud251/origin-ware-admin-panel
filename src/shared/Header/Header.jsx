@@ -4,7 +4,7 @@ import { IoIosNotificationsOutline } from "react-icons/io";
 
 function Header({ toggleMenu }) {
   return (
-    <div className="w-full bg-black p-4 text-white sticky top-0">
+    <div className="w-full bg-black p-4 text-white sticky top-0 z-10">
       <div className="flex  justify-between items-center">
         <div className="lg:hidden block">
           <FaBars onClick={toggleMenu} size={24} />

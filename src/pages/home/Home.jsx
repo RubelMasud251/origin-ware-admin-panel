@@ -2,6 +2,7 @@ import { useState } from "react";
 import { IoIosClose } from "react-icons/io";
 import { Link } from "react-router-dom";
 import Collops from "../../components/home/Collops";
+import { Divider } from "antd";
 
 const Home = () => {
   const [close, setClose] = useState(false);
@@ -41,6 +42,10 @@ const Home = () => {
         </p>
         <Collops />
       </div>
+
+      <Divider>
+        <p className="font-semibold text-sm">All caught up</p>
+      </Divider>
     </div>
   );
 };
