@@ -1,0 +1,9 @@
+/* Hide dropdown by default */
+#dropdown-menu {
+  display: none;
+}
+
+/* Show dropdown on hover */
+#user-profile-photo:hover + #dropdown-menu {
+  display: block;
+}
